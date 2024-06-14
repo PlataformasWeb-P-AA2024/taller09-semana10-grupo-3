@@ -42,4 +42,7 @@ class MatriculaAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     list_display = ('estudiante', 'modulo', 'comentario')
     search_fields = ('estudiante__nombre', 'modulo__nombre')
 
+class ModuloAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+    
+
 admin.site.register(Matricula, MatriculaAdmin)
